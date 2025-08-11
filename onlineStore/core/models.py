@@ -58,7 +58,7 @@ class Product(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse('main:product_detail',
+        return reverse('core:product_detail',
                        args=[self.slug])
 
     def sell_price(self):
