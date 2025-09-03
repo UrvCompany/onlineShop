@@ -16,12 +16,9 @@
 </head>
 <body>
     <header class="header sticky-top">
-        <div class="header-container d-flex">
-            <navbar class="header-nav pt-4">
-                <ul class="header-list d-flex">
-                    <li>
-                        <a href="/" class="nav-a m-3"></a>
-                    </li>
+        <div class="header-container d-flex align-items-center justify-content-between">
+            <nav class="header-nav">
+                <ul class="header-list d-flex mb-0">
                     <li>
                         <a href="/" class="nav-a m-3">Home</a>
                     </li>
@@ -29,30 +26,32 @@
                         <a href="/" class="nav-a m-3">Shop</a>
                     </li>
                 </ul>
-            </navbar>
-        <div class="header-logo">
+            </nav>
 
-        </div>
-            <a href="/"><img src="{% static 'img/test_logo.png'%}" alt="" class="heavy-logo"> </a>
-        </div>
-        <div class="header-profile">
-            <a href="#" class="m-3">LOGIN</a>
+            <div class="header-logo">
+                <a href="/"><img src="{% static 'img/test_logo.jpg'%}" alt="Logo" class="logo-img"> </a>
+            </div>
+
+            <div class="header-profile">
+                <a href="#" class="nav-a m-3">LOGIN</a>
+            </div>
         </div>
     </header>
+
     <div class="container">
         {% block content %}
         {% endblock content %}
     </div>
 
     <!-- Рамки на каждой странице -->
-    <img src="{% static 'img/frame1.png' %}" class="frame1" alt="">
-    <img src="{% static 'img/frame2.png' %}" class="frame2" alt="">
-    <img src="{% static 'img/frame3.png' %}" class="frame3" alt="">
-    <img src="{% static 'img/frame4.png' %}" class="frame4" alt="">
+    <img src="{% static 'img/frame1.jpg' %}" class="frame1" alt="">
+    <img src="{% static 'img/frame2.jpg' %}" class="frame2" alt="">
+    <img src="{% static 'img/frame3.jpg' %}" class="frame3" alt="">
+    <img src="{% static 'img/frame4.jpg' %}" class="frame4" alt="">
 
 
 
     {% comment %} js from bootstrap {% endcomment %}
-    <script src=" static 'bootstrap\js\bootstrap.bundle.min.js' "></script>
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 </body>
 </html>

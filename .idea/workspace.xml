@@ -5,13 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a17f6f4-6a00-4bdc-bad0-ad3942899695" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/onlineStore/core/static/img/noimage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineStore/core/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineStore/core/static/img/frame1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineStore/core/static/img/frame2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineStore/core/static/img/frame3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineStore/core/static/img/frame4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineStore/core/static/img/home_button.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineStore/core/static/img/subtitee.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineStore/core/static/img/test_logo.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineStore/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineStore/core/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineStore/core/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/onlineStore/core/static/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineStore/core/static/img/test_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineStore/core/templates/core/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/onlineStore/core/templates/core/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/onlineStore/core/templates/core/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/onlineStore/core/templates/core/index/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/onlineStore/core/templates/core/product/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/onlineStore/core/templates/core/product/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineStore/onlineStore/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineStore/onlineStore/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +51,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Konstantin/PycharmProjects/onlineStore&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
