@@ -1,226 +1,362 @@
 @import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
 
+/* ===== CSS ПЕРЕМЕННЫЕ ===== */
 :root {
-    --box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.363);
+    --box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.363); /* Тень для элементов */
 }
 
-
+/* ===== ОСНОВНЫЕ СТИЛИ СТРАНИЦЫ ===== */
 body{
-    font-family: "Story Script", sans-serif;
-    font-size: 18px;
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
+    font-family: "Story Script", sans-serif; /* Основной шрифт */
+    font-size: 18px; /* Базовый размер текста */
+    padding: 0; /* Убрать внутренние отступы */
+    margin: 0; /* Убрать внешние отступы */
+    overflow-x: hidden; /* Скрыть горизонтальный скролл */
 }
 
+/* ===== ТИПОГРАФИКА ===== */
+
+/* Списки - убрать стандартное оформление */
 ul {
-    list-style: none;
-    padding: 0
+    list-style: none; /* Убрать маркеры списка */
+    padding: 0 /* Убрать отступы */
 }
 
+/* Ссылки - базовое оформление */
 a {
-    text-decoration: none;
-    color: #000;
+    text-decoration: none; /* Убрать подчеркивание */
+    color: #000; /* Цвет текста */
 }
 
+/* Заголовки разных уровней */
 h1 {
-    font-siz: 48px;
+    font-siz: 48px; /* Размер заголовка 1 уровня */
 }
 
 h2 {
-    font-size: 48px;
-    font-weight: 600;
+    font-size: 48px; /* Размер заголовка 2 уровня */
+    font-weight: 600; /* Жирность шрифта */
 }
 
 h3 {
-    font-size: 36px;
+    font-size: 36px; /* Размер заголовка 3 уровня */
 }
 
 h5 {
-    font-size: 18px;
-    margin: 0;
-    font-weight: 600;
+    font-size: 18px; /* Размер заголовка 5 уровня */
+    margin: 0; /* Убрать отступы */
+    font-weight: 600; /* Жирность шрифта */
 }
 
+/* ===== ШАПКА САЙТА ===== */
+
+/* Контейнер шапки */
 .header-container {
-    box-sizing: border-box;
-    max-width: 1400px;
-    margin: 0 auto;
-    justify-content: space-between;
-    padding: 0 15px;
-    align-items: center;
-
+    box-sizing: border-box; /* Размеры включают padding и border */
+    max-width: 1400px; /* Максимальная ширина */
+    margin: 0 auto; /* Центрирование по горизонтали */
+    justify-content: space-between; /* Распределение пространства между элементами */
+    padding: 0 15px; /* Горизонтальные отступы */
+    align-items: center; /* Выравнивание по вертикали */
 }
 
+/* Основной контейнер контента */
 .container{
-    box-sizing: border-box;
-    max-width: 1600px;
-    margin: 0 auto;
+    box-sizing: border-box; /* Размеры включают padding и border */
+    max-width: 1600px; /* Максимальная ширина */
+    margin: 0 auto; /* Центрирование по горизонтали */
 }
 
+/* Шапка сайта */
 .header {
-    height: 80px;
-    background-color: #fff;
-    box-shadow: var(--box-shadow);
+    height: 80px; /* Фиксированная высота */
+    background-color: #fff; /* Белый фон */
+    box-shadow: var(--box-shadow); /* Тень с использованием CSS переменной */
 }
 
+/* Навигационное меню */
 .header-list{
-    text-transform: uppercase;
+    text-transform: uppercase; /* Текст в верхнем регистре */
 }
 
+/* ===== ГЛАВНАЯ СТРАНИЦА ===== */
+
+/* Логотип */
 .heavy-logo {
-    position: fixed;
-    top: 0.5%;
-    left: 44.5%;
+    position: fixed; /* Фиксированное позиционирование */
+    top: 0.5%; /* Отступ сверху */
+    left: 44.5%; /* Отступ слева */
 }
 
+/* Главная секция */
 .home {
-    align-items: center;
+    align-items: center; /* Выравнивание по центру по вертикали */
 }
 
+/* Заголовок главной страницы */
 .home-title {
-    margin-top: 210px;
-    margin-bottom: 50px;
+    margin-top: 210px; /* Отступ сверху */
+    margin-bottom: 50px; /* Отступ снизу */
 }
 
+/* Карточка товара */
 .home-card {
-    width: 200px;
-    height: 325px;
-    border: 1px solid #00000027;
-    border-radius: 5px;
-    transition: all 0.5s ease;
-    background-color: #fff;
+    width: 200px; /* Ширина карточки */
+    height: 325px; /* Высота карточки */
+    border: 1px solid #00000027; /* Полупрозрачная граница */
+    border-radius: 5px; /* Закругленные углы */
+    transition: all 0.5s ease; /* Плавный переход для всех свойств */
+    background-color: #fff; /* Белый фон */
 }
 
+/* Эффект при наведении на карточку */
 .home-card:hover {
-    border: 1px solid #000;
+    border: 1px solid #000; /* Темная граница при наведении */
 }
 
+/* Заголовок в карточке товара */
 .title-card {
-    max-width: 185px;
-    margin-top: 20px;
-    min-height: 70px;
+    max-width: 185px; /* Максимальная ширина */
+    margin-top: 20px; /* Отступ сверху */
+    min-height: 70px; /* Минимальная высота */
 }
 
+/* Изображение в карточке товара */
 .card-img {
-    width: 195px;
-    height: 195px;
+    width: 195px; /* Ширина изображения */
+    height: 195px; /* Высота изображения */
 }
 
+/* Цена товара */
 .price {
-    font-size: 20px;
-    font-weight: 700;
-    margin-top: -10px;
+    font-size: 20px; /* Размер шрифта */
+    font-weight: 700; /* Жирный шрифт */
+    margin-top: -10px; /* Отрицательный отступ сверху */
 }
 
+/* ===== КНОПКИ ===== */
+
+/* Кнопка на главной странице */
 .home-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 180px;
-    height: 50px;
-    border: 1px solid #00000027;
-    border-radius: 5px;
-    background-image: url(../img/home_button.jpg);
-    transition: all 0.4s ease;
-    z-index: 2;
+    display: flex; /* Flex-контейнер */
+    align-items: center; /* Выравнивание по центру по вертикали */
+    justify-content: center; /* Выравнивание по центру по горизонтали */
+    width: 180px; /* Ширина кнопки */
+    height: 50px; /* Высота кнопки */
+    border: 1px solid #00000027; /* Полупрозрачная граница */
+    border-radius: 5px; /* Закругленные углы */
+    background-image: url(../img/home_button.jpg); /* Фоновое изображение */
+    transition: all 0.4s ease; /* Плавный переход */
+    z-index: 2; /* Уровень слоя */
 }
 
+/* Эффект при наведении на кнопку */
 .home-btn:hover{
-    border: 1px solid #000;
+    border: 1px solid #000; /* Темная граница при наведении */
 }
 
+/* ===== ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ (РАМКИ) ===== */
+
+/* Правая верхняя рамка */
 .frame2 {
-    position: absolute;
-    right: 0.5%;
-    bottom: 84%;
-    z-index: -1;
+    position: absolute; /* Абсолютное позиционирование */
+    right: 0.5%; /* Отступ справа */
+    bottom: 84%; /* Отступ снизу */
+    z-index: -1; /* Уровень слоя (позади контента) */
 }
 
+/* Левая верхняя рамка */
 .frame1 {
-    position: absolute;
-    left: 0.5%;
-    bottom: 84%;
-    z-index: -1;
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0.5%; /* Отступ слева */
+    bottom: 84%; /* Отступ снизу */
+    z-index: -1; /* Уровень слоя (позади контента) */
 }
 
+/* Левая нижняя рамка */
 .frame3 {
-    position: absolute;
-    left: 0.5%;
-    top: 84%;
-    z-index: -1;
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0.5%; /* Отступ слева */
+    top: 84%; /* Отступ сверху */
+    z-index: -1; /* Уровень слоя (позади контента) */
 }
 
+/* Правая нижняя рамка */
 .frame4 {
-    position: absolute;
-    right: 0.5%;
-    top: 84%;
-    z-index: -1;
+    position: absolute; /* Абсолютное позиционирование */
+    right: 0.5%; /* Отступ справа */
+    top: 84%; /* Отступ сверху */
+    z-index: -1; /* Уровень слоя (позади контента) */
 }
 
+/* ===== ЛОГОТИП И ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ ===== */
+
+/* Основной логотип */
 .test_logo{
-    position: absolute;
-    top: 6%;
-    left: 40%;
-    width: 400px;
-    height: 300px;
+    position: absolute; /* Абсолютное позиционирование */
+    top: 6%; /* Отступ сверху */
+    left: 40%; /* Отступ слева */
+    width: 400px; /* Ширина */
+    height: 300px; /* Высота */
 }
 
+/* Подпись или дополнительный элемент */
 .subtitee{
+    position: absolute; /* Абсолютное позиционирование */
+    bottom: 0%; /* Отступ снизу */
+    left: 20%; /* Отступ слева */
+}
+
+/* ===== СТРАНИЦА ДЕТАЛЕЙ ТОВАРА ===== */
+
+/* Изображение товара на странице деталей */
+.detail-image {
+    width: 650px; /* Ширина изображения */
+    height: 650px; /* Высота изображения */
+}
+
+/* Контейнер деталей товара */
+.detail-product {
+    margin-top 80px; /* Отступ сверху */
+}
+
+/* Описание товара */
+.detail-description {
+    margin-left: 40px; /* Отступ слева */
+    margin-top: 40px; /* Отступ сверху */
+}
+
+/* Параграф в описании товара */
+..detail-description p {
+    margin-top: 30px; /* Отступ сверху */
+    max-width: 700px; /* Максимальная ширина */
+}
+
+/* Спан в заголовке описания */
+.detail-description h2 span{
+    font-size: 56px; /* Размер шрифта */
+}
+
+/* ===== КОРЗИНА И СКИДКИ ===== */
+
+/* Контейнер скидочной цены */
+.cart-discount{
+    margin-top: -10px; /* Отрицательный отступ сверху */
+    font-weight: 600; /* Жирность шрифта */
+}
+
+/* Цена в скидочном блоке */
+.cart-discount .price{
+    margin-top: -1px; /* Отрицательный отступ сверху */
+}
+
+/* Зачеркнутая цена (старая цена) */
+.line{
+    opacity: 0.7; /* Полупрозрачность */
+    text-decoration: line-through; /* Зачеркнутый текст */
+    font-weight 300; /* Легкая жирность */
+}
+
+/* Кнопка добавления в корзину */
+.cart-btn{
+    width: 180px; /* Ширина кнопки */
+    height: 50px; /* Высота кнопки */
+    border: 1px solid #00000027; /* Полупрозрачная граница */
+    border-radius: 5px; /* Закругленные углы */
+    margin-top: 20px; /* Отступ сверху */
+    background-image: url(../img/home_button.jpg); /* Фоновое изображение */
+    transition: all 0.4s ease; /* Плавный переход */
+    z-index: 2; /* Уровень слоя */
+}
+
+/* Эффект при наведении на кнопку корзины */
+.cart-btn:hover{
+    border: 1px solid #000; /* Темная граница при наведении */
+}
+
+/* ===== СТРАНИЦА МАГАЗИНА ===== */
+
+/* Основная область контента */
+.main {
+    margin-left: 150px; /* Отступ слева для сайдбара */
+}
+
+/* Заголовок основной области */
+.main-title {
+    font-size: 36px; /* Размер шрифта */
+    margin-bottom: 10 px; /* Отступ снизу */
+    margin-top: 65px; /* Отступ сверху */
+}
+
+/* Сетка товаров */
+.items{
+    display: grid; /* Grid-раскладка */
+    grid-template-columns: repeat(auto-fill, 225px); /* Автозаполнение колонками по 225px */
+    width: 100%; /* Ширина 100% */
+    max-width: 1300px; /* Максимальная ширина */
+    justify-content: center; /* Выравнивание по центру по горизонтали */
+    justify-items: center; /* Выравнивание элементов по центру */
+    column-gap: 0px; /* Расстояние между колонками */
+    row-gap: 10px; /* Расстояние между строками */
+    margin: 0 auto; /* Центрирование по горизонтали */
+}
+
+/* ===== БОКОВАЯ ПАНЕЛЬ (САЙДБАР) ===== */
+
+/* Боковая панель категорий */
+.sidebar{
+    margin-top 70px; /* Отступ сверху */
+}
+
+/* Список в сайдбаре */
+.list{
+    margin-left: -80px; /* Отрицательный отступ слева */
+}
+
+/* Элементы списка категорий */
+.sidebar ul li {
+    font-size: 20px; /* Размер шрифта */
+    width: 220px; /* Ширина элемента */
+    height: 60px; /* Высота элемента */
+    margin-bottom: 8px; /* Отступ снизу */
+    display: flex; /* Flex-контейнер */
+    align-items: center; /* Выравнивание по центру по вертикали */
+}
+
+/* Ссылки в сайдбаре */
+.sidebar ul li a {
+    margin-left: 15px; /* Отступ слева */
+    width: 100%; /* Ширина 100% родителя */
+    height: 100%; /* Высота 100% родителя */
+    display: flex; /* Flex-контейнер */
+    align-items: center; /* Выравнивание по центру по вертикали */
+}
+
+/* Список в сайдбаре */
+.sidebar ul {
+    margin-top: 20px; /* Отступ сверху */
+}
+
+/* Выбранная категория */
+.selected {
+    border: 1px solid #000; /* Граница */
+    border-radius: 5px; /* Закругленные углы */
+    background-image: url('/static/img/categories-gtn1.png'); /* Фоновое изображение */
+    background-size: cover; /* Растягивание фона с сохранением пропорций */
+    background-repeat: no-repeat; /* Запрет повторения фона */
+    background-position: center; /* Центрирование фона */
+    background-color: transparent; /* Прозрачный фон */
+}
+
+.pagination {
+    display: flex;
     position: absolute;
     bottom: 0%;
-    left: 20%;
+    left: 46%;
+    gap: 12px;
+    justify-content: center;
 }
 
-.detail-image {
-    width: 650px;
-    height: 650px;
-}
-
-.detail-product {
-    margin-top 80px;
-}
-
-.detail-description {
-    margin-left: 40px;
-    margin-top: 40px;
-}
-
-..detail-description p {
-    margin-top: 30px;
-    max-width: 700px;
-}
-
-.detail-description h2 span{
-    font-size: 56px;
-}
-
-.cart-discount{
-    margin-top: -10px;
-    font-weight: 600;
-}
-
-.cart-discount .price{
-    margin-top: -1px;
-}
-
-.line{
-    opacity: 0.7;
-    text-decoration: line-through;
-    font-weight 300;
-}
-
-.cart-btn{
-    width: 180px;
-    height: 50px;
-    border: 1px solid #00000027;
-    border-radius: 5px;
-    margin-top: 20px;
-    background-image: url(../img/home_button.jpg);
-    transition: all 0.4s ease;
-    z-index: 2;
-}
-
-.cart-btn:hover{
-    border: 1px solid #000;
+.disabled {
+    opacity: 0.2;
 }
