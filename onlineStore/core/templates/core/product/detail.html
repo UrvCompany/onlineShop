@@ -9,8 +9,8 @@
     <div class="detail-product d-flex">
         <div class="detail-img">
             <img src="{% if product.image %}{{ product.image.url }}{% else %}{% static 'img/noimage.png' %}{% endif %}" alt="" class="detail-image">
-
         </div>
+
         <div class="detail-description">
             <h2>{{ product.name }}</h2>
             <h3>Category: {{ product.category}} </h3>
@@ -22,8 +22,17 @@
                     </div>
                 {% else %}
                     <p class="price">{{ product.price }}</p>
-                {% endif %}
-            <a href="#" class="cart-btn d-flex align-items-center justify-content-center">Добавить в корзину</a>
+            {% endif %}
+
+            <form action="{% url 'cart:cart_add' product.id %}" class="qform" method="post">
+                <div class="cart-form">
+                    {{ cart_product_form }}
+                    {% csrf_token %}
+                </div>
+                <input type="submit" class="add-to-cart-btn" value="Добавить в корзину">
+            </form>
+
         </div>
+
     </div>
 {% endblock content %}
