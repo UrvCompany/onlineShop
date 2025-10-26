@@ -33,7 +33,17 @@
             </div>
 
             <div class="header-profile">
-                <a href="#" class="nav-a m-3">LOGIN</a>
+                <a href="{% url 'cart:cart_detail' %}"> <img src="{% static 'img/grob.jpg'%}" alt="" class="grob"> </a>
+                <a href="#" class="nav-a m-2">LOGIN</a>
+                <p class="cart_quantity">
+                    {% with cart_quantity=cart|length%}
+                        {% if cart_quantity > 0 %}
+                            {{ cart_quantity }}
+                        {% else %}
+                            0
+                        {% endif %}
+                    {% endwith %}
+                </p>
             </div>
         </div>
     </header>

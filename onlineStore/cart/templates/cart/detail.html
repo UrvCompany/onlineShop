@@ -22,7 +22,7 @@
                             <div class="cart-card-q">
                                 <p>Quantity: {{ item.quantity }}</p>
                             </div>
-                            <form action="{% url 'cart:cart_remove' product_id %}" method="post">
+                            <form action="{% url 'cart:cart_remove' product.id %}" method="post">
                                 <input type="submit" value="Remove" class="remove-btn">
                                 {% csrf_token %}
                             </form>
@@ -45,8 +45,13 @@
             <h5> Total sum: {{ cart.get_total_price }} </h5>
         </div>
         <div class="cart-buttons d-flex gap-3">
-            <a href="/shop" class="cart-btn"> Continue Shopping </a>
-            <a href="#" class="cart-btn"> Checkout </a>
+            <a href="/shop" class="cart-btn"> Продолжить покупки </a>
+            {% with cart_quantity=cart|length %}
+                {% if cart_quantity > 0 %}
+                    <a href="#" class="cart-btn"> Офориление заказа </a>
+                {% endif %}
+            {% endwith %}
+
         </div>
     </section>
 {% endblock content %}
