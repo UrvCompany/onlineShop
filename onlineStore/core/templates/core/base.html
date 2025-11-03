@@ -23,18 +23,18 @@
                         <a href="/" class="nav-a m-3">Home</a>
                     </li>
                     <li>
-                        <a href="/" class="nav-a m-3">Shop</a>
+                        <a href="/shop" class="nav-a m-3">Shop</a>
                     </li>
                 </ul>
             </nav>
 
             <div class="header-logo">
-                <a href="/"><img src="{% static 'img/test_logo.jpg'%}" alt="Logo" class="logo-img"> </a>
+                <a href="/shop"><img src="{% static 'img/test_logo.jpg'%}" alt="Logo" class="logo-img"> </a>
             </div>
 
             <div class="header-profile">
                 <a href="{% url 'cart:cart_detail' %}"> <img src="{% static 'img/grob.jpg'%}" alt="" class="grob"> </a>
-                <a href="#" class="nav-a m-2">LOGIN</a>
+                <a href="{% url 'users:login' %}" class="nav-a m-2">LOGIN</a>
                 <p class="cart_quantity">
                     {% with cart_quantity=cart|length%}
                         {% if cart_quantity > 0 %}
